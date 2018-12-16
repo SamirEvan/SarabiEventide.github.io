@@ -1,11 +1,11 @@
 # Site settings
 author: Sarabi Eventide
-title: 
+title: Disrupting Data Science
 header-img: img/home-bg.png
 email: sarabi.n.eventide@gmail.com
 copyright_name: Sarabi Eventide
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Forays Into One of the Fastest Growing Tech Careers
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  SarabiEventide
