@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "And So It Begins (or Rather, it Continues...)"
-date:       2018-12-17 22:43:37 +0000
+date:       2018-12-17 17:43:38 -0500
 permalink:  and_so_it_begins_or_rather_it_continues
 ---
 
@@ -23,7 +23,7 @@ I'm a voracious reader, so I thought a text-heavy course would be a breeze (spoi
 By this point, I was running out of time to make a decision. I had one more semester to choose a major. Quickly running through the list (the school was small, there were only around 15 or 20 options), my eyes landed on Interactive Media Arts. I had no idea what that was, but it had something to do with computers and I vaguely remembered tinkering with the CSS in MySpace profile layout codes. It was no longer an active hobby of mine, so jumping into it didn't break my (new) cardinal rule of keeping work life and personal life separate. 
 
 
-Later, I learned that Interactive Media Arts is about exploring the interaction between humans and computers. It's decidedly more art-based than computer-based, though. It was an enjoyable course but by the end, I didn't feel I had a solid enough set of skills to get a job related to my major. After I graduated, I wound up teaching English in China, which is what I'd been doing part-time throughout my uni years anyway. Once again, I'd made a safe choice. 
+Later, I learned that Interactive Media Arts is about exploring the interaction between humans and machines. It's decidedly more art-based than computer-based, though. It was an enjoyable course but by the end, I didn't feel I had a solid enough set of skills to get a job related to my major. After I graduated, I wound up teaching English in China, which is what I'd been doing part-time throughout my uni years anyway. Once again, I'd made a safe choice. 
 
 
 The issue, though, is that I truly *did* enjoy working with computers. While I could have probably earned the certificates necessary to teach computer literacy or even basic web development, I decided to stop playing it safe. Though I did learn a lot about my likes and dislikes, playing it safe cost me three college semesters and a year of post-grad self-improvement. I'm 23 years old (as of this writing), I have my entire life ahead of me and there is absolutely no reason for me to live my life according to so-called bulletproof plans. I am in one of the best possible positions to live my best life and (hopefully) help a few people along the way.
