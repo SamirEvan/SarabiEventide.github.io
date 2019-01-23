@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Set it and Forget it: Using Formulas for EDA"
-date:       2019-01-23 19:20:25 +0000
+date:       2019-01-23 14:20:26 -0500
 permalink:  set_it_and_forget_it_using_formulas_for_eda
 ---
 
@@ -57,6 +57,7 @@ def correlation_heatmap(df):
 ### Ordinary Least Squares Regression Function 
 
 ```
+
 def quick_ols(DataFrame = None, target = None):   # formula to run ordinary least squares
     col_names = DataFrame.describe().columns.drop([target])
     results = [['ind_var', 'r_squared', 'intercept', 'slope', 'p-value' ]]
@@ -70,6 +71,7 @@ def quick_ols(DataFrame = None, target = None):   # formula to run ordinary leas
         preds = model.predict(X_new)
         results.append([val, model.rsquared, model.params[0], model.params[1], model.pvalues[1] ])
         print(results[idx+1])
+				
 		``` 
 		
 This is perhaps the most useful function I wrote. It returns a neatly formated table similar to the one you get when you use statsmodels' multilinear regression methods. The difference here is that `quick_ols` allows you to quickly iterate through several features to determine which ones best predict your target.
