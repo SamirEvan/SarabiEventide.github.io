@@ -18,12 +18,14 @@ During my [first exploratory data analysis project,](https://github.com/SarabiEv
 ### Scatter Plots 
 
 ```
+
 def multi_scatter(column_names = None, target = None):
     fig, axs = plt.subplots(1, 4, sharey=True, figsize=(18, 6))
     for idx, feature in enumerate(column_names):
         df.plot(kind='scatter', x=feature, y=target, ax=axs[idx], label=feature, alpha = 0.3)
     plt.legend()
-		```
+		
+```
 		
 
 It's much faster to view several scatter plots at once than it is to plot each column's data individually. That said, large matrices of scatterplots are hard to read. I found that 4 plots fit neatly on one line. The `column_names` parameter allows you to pass in the column's you're interested in as arguments. The `target` is the variable you'd like to compare the others against. `figsize` and `alpha` can be adjusted as per preference, but I've found that (18,6) and "0.3" (respectively) produce the cleanest results. 
@@ -32,11 +34,13 @@ It's much faster to view several scatter plots at once than it is to plot each c
 ### Eliminating outliers
 
 ```
+
 def drop_max(column_name = None):
     max_val = df[column_name].idxmax()
     df[column_name] = df[column_name].drop([max_val])
     return df.boxplot([column_name])
-	```
+		
+```
 	
 	
 There are several ways to deal with outliers, but if you're as visual as I am, box plots make it easy to spot them. This function takes the column name as an argument, finds the highest value (which you've already determined to be an outlier at this point) and drops it. Then it returns another box plot so you can see the distribution of the data again and decide whether to repeat the process. 
@@ -47,10 +51,12 @@ There are several ways to deal with outliers, but if you're as visual as I am, b
 I also wrote a function for heatmaps, but because I'll be discussing it in greater detail in a later post, I'll skip over it for now. Here it is for reference, though. 
 
 ```
+
 def correlation_heatmap(df): 
     _, ax = plt.subplots(figsize = (15, 10))
     colormap= sns.diverging_palette(220, 10, as_cmap = True)
     sns.heatmap(df.corr(), annot=True, cmap = colormap)
+		
 ```
 
 
@@ -72,7 +78,7 @@ def quick_ols(DataFrame = None, target = None):   # formula to run ordinary leas
         results.append([val, model.rsquared, model.params[0], model.params[1], model.pvalues[1] ])
         print(results[idx+1])
 				
-		``` 
+``` 
 		
 This is perhaps the most useful function I wrote. It returns a neatly formated table similar to the one you get when you use statsmodels' multilinear regression methods. The difference here is that `quick_ols` allows you to quickly iterate through several features to determine which ones best predict your target.
 		
